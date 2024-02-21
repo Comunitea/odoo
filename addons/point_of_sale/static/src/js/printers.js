@@ -104,7 +104,7 @@ var PrinterMixin = {
                     $('.pos-receipt-print').empty();
                     resolve(self.process_canvas(canvas));
                 },
-                letterRendering: self.pos.htmlToImgLetterRendering(),
+                letterRendering: false,
             })
         });
         return promise;
